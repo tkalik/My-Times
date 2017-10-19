@@ -5,11 +5,13 @@
   font-weight: bold;
   border-bottom: 1px solid black;
   justify-content: space-between;
+
 }
 
 .logo {
   display: flex;
   align-items: center;
+
 }
 .logo p {
   color: MediumAquamarine;
@@ -33,3 +35,58 @@
  .navigation a {
    color: black;
  }
+
+.mother,
+.valley,
+.orca,
+.earth,
+.burger,
+.research,
+.fbi,
+.cats,
+.brooklyn,
+.bites,
+.cookie {
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  margin: 0px 10px;
+  border: 1px solid black;
+  
+
+
+}
+
+.column {
+  flex-grow: 2;
+  display:inline-flex;
+  margin-top: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.large,
+.small,
+.medium {
+  border: 1px solid black;
+}
+
+.large {
+  display: flex;
+  width: 630px;
+  flex-direction: column;
+}
+
+.medium {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+
+.small {
+  display: flex;
+  width: 240px;
+  flex-direction: column;
+}
