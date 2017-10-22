@@ -9,6 +9,7 @@
   width: 100%;
   background-color: white;
   top: 0px;
+  z-index: 5;
 }
 
 .logo {
@@ -31,11 +32,12 @@
   padding: 10px 30px;
 }
 
-.headlink {
-  padding: 10px;
+.link {
+  padding: 15px;
 }
 
- .navigation a {
+ .navigation a,
+ .navi a {
    color: black;
  }
 
@@ -50,57 +52,80 @@
 .brooklyn,
 .bites,
 .cookie {
-  border: 1px solid black;
+  display: inline-flex;
+}
+
+
+.orca,
+.burger,
+.earth,
+.research {
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.orca,
+.burger,
+.fbi,
+.bites {
+  flex-direction: column;
 }
 
 .container {
   display: flex;
-  margin: 0px 10px;
-  border: 1px solid black;
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 .column {
-  flex-grow: 2;
+  width: 100%;
   display:inline-flex;
   margin-top: 20px;
   margin-right: 20px;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.large,
-.small,
-.medium {
-  border: 1px solid black;
+  justify-content: space-around;
+
 }
 
 .large {
-  display: flex;
+  display: inline-flex;
   width: 630px;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.story {
+  width: 630px;
+  display: flex;
+  flex-grow: 2;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.one,
+.two {
+  display: flex;
   flex-direction: column;
 }
 
 .medium {
+
   display: flex;
   width: 300px;
   flex-direction: column;
 }
 
 .small {
+
   display: flex;
   width: 240px;
   flex-direction: column;
 }
 
-.mother,
-.earth,
-.research,
-.cats {
-  display: flex;
-}
 
 .mother {
   height: 300px;
-  align-items: flex-start;
+
 }
 
 .earth,
@@ -116,7 +141,6 @@
   font-weight: bold;
   color: white;
   font-size: 40px;
-  border: 1px solid white;
   margin: 0px;
 }
 
@@ -128,7 +152,6 @@
   font-weight: bold;
   font-size: 30px;
   color: white;
-  border: 1px solid white;
   margin: 0px;
   text-align: center;
 }
@@ -142,6 +165,31 @@
 .cats p {
   width: 260px;
   height: 80px;
+}
+
+.bites h2 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.bites p {
+  display: flex;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  min-height: 50px;
+  margin: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  border-bottom: 1px solid black;
 }
 
 .valley,
@@ -168,4 +216,38 @@
 
 .cats-background {
   background-image: url("./images/img-story-1.png");
+}
+
+.bottom {
+  display: flex;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.times {
+  display: flex;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  height: 20px;
+  border-right: 2px solid white;
+  padding-right: 20px;
+}
+
+.bone,
+.boo {
+  display: flex;
+  align-items: center;
+
+}
+.navi {
+  display: flex;
+  padding-left: 30px;
 }
